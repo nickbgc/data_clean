@@ -25,7 +25,7 @@ def separate_zip_zip4(row):
     return pd.Series([zip5, zip4], index=['5DigitZip', 'Zip+4'])
 
 # Load the messy data using ISO-8859-1 encoding
-df = pd.read_csv('messy_data.csv', encoding='ISO-8859-1')
+df = pd.read_csv('IBNmessy.csv', encoding='ISO-8859-1')
 
 # Create new columns based on the old ones
 df['name'] = df['1ST LINE OF NAME & ADDRESS']
